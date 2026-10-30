@@ -1,0 +1,14 @@
+.s11-machine{max-width:62rem}
+#s11-carte{width:100%;height:auto;border:1px solid var(--ligne);border-radius:1rem;background:#0a101f}
+.s11-label{display:block;margin-top:1rem;color:var(--or);font-weight:600}
+#s11-curseur{width:100%;min-height:44px;accent-color:var(--or);cursor:pointer}
+.s11-lecture{border-left:3px solid var(--or);padding:.4rem 0 .4rem 1rem;margin:.6rem 0}
+.s11-annee{color:var(--blanc);font-size:1.3rem;margin:.2rem 0}
+.s11-table{display:grid;gap:.6rem}
+.s11-ligne{display:grid;grid-template-columns:1fr 1fr;gap:1rem;border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;background:var(--carte)}
+.s11-ligne.s11-entete{background:none;border:none;padding:0 1.2rem;color:var(--or);font-weight:700}
+.s11-retourne{background:none;border:1px solid var(--or);color:var(--or);border-radius:999px;padding:.6rem 1.1rem;cursor:pointer;font:inherit;min-height:44px}
+.s11-preuve .s11-face{display:none}.s11-preuve.ouverte .s11-face{display:block}
+figure{margin:0} figure img{width:100%;border-radius:1rem} figcaption{color:var(--sable);font-size:.92rem;margin-top:.5rem}
+audio{width:min(38rem,100%)} details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0} summary{cursor:pointer;color:var(--blanc)}
+@media (max-width:56rem){.s11-ligne{grid-template-columns:1fr}}

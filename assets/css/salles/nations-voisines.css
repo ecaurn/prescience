@@ -1,0 +1,7 @@
+.s05-fiches{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(19rem,100%),1fr));gap:1.2rem}
+.s05-fiche img{border-radius:.6rem;transition:filter 1s ease}
+.s05-fiche.accomplie img{filter:grayscale(.9) brightness(.75)}
+.s05-destin{display:none}.s05-fiche.accomplie .s05-destin{display:block}
+.s05-bascule,.s05-retourne{background:none;border:1px solid var(--or);color:var(--or);border-radius:999px;padding:.6rem 1.1rem;cursor:pointer;font:inherit;min-height:44px}
+.s05-preuve .s05-face{display:none}.s05-preuve.ouverte .s05-face{display:block}
+audio{width:min(38rem,100%)} details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0} summary{cursor:pointer;color:var(--blanc)}

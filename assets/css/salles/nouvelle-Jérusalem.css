@@ -1,0 +1,11 @@
+.s34-mesures{display:flex;gap:.6rem;flex-wrap:wrap;margin:1rem 0}
+.s34-mesures button,.s34-actions button{background:none;border:1px solid var(--ligne);color:var(--blanc);border-radius:999px;padding:.6rem 1.1rem;cursor:pointer;font:inherit;min-height:44px}
+.s34-mesures button.actif{border-color:var(--or);color:var(--or)}
+.s34-actions button:hover,.s34-mesures button:hover{border-color:var(--or);color:var(--or)}
+.s34-actions button:disabled{opacity:.4;cursor:default}
+.s34-visite{max-width:46rem;border:1px solid var(--or);border-radius:1rem;padding:1.4rem;background:var(--carte)}
+.s34-barre{height:.6rem;border:1px solid var(--ligne);border-radius:999px;overflow:hidden;margin:.6rem 0 1rem}
+.s34-barre i{display:block;height:100%;width:20%;background:var(--or);transition:width .5s ease}
+.s34-actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem}
+figure{margin:0} figure img{width:100%;border-radius:1rem} figcaption{color:var(--sable);font-size:.92rem;margin:.5rem 0}
+audio{width:min(38rem,100%)} details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0} summary{cursor:pointer;color:var(--blanc)}

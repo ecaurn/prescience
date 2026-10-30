@@ -1,0 +1,16 @@
+.s10-calc{max-width:62rem}
+.s10-semaines{display:grid;grid-template-columns:repeat(14,1fr);gap:.3rem;margin-bottom:1rem}
+.s10-semaines i{display:block;height:1rem;border:1px solid var(--ligne);border-radius:.25rem;background:#101827}
+.s10-semaines i.pleine{background:var(--or);border-color:var(--or)}
+.s10-semaines i.derniere{border-color:var(--turquoise)}
+.s10-semaines i.derniere.pleine{background:var(--turquoise)}
+.s10-label{display:block;color:var(--or);font-weight:600}
+#s10-curseur{width:100%;min-height:44px;accent-color:var(--or);cursor:pointer}
+.s10-lecture{border-left:3px solid var(--or);padding:.4rem 0 .4rem 1rem;margin:.6rem 0}
+.s10-ligne{color:var(--blanc);font-size:1.15rem}
+#s10-ans{color:var(--or);font-size:1.6rem;font-weight:700}
+.s10-jalons{display:flex;flex-wrap:wrap;gap:.5rem}
+.s10-jalons button{background:none;border:1px solid var(--ligne);color:var(--sable);border-radius:999px;padding:.55rem 1rem;cursor:pointer;font:inherit;min-height:44px}
+.s10-jalons button:hover{border-color:var(--or);color:var(--or)}
+figure{margin:0} figure img{width:100%;border-radius:1rem} figcaption{color:var(--sable);font-size:.92rem;margin-top:.5rem}
+audio{width:min(38rem,100%)} details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0} summary{cursor:pointer;color:var(--blanc)}

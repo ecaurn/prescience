@@ -1,0 +1,11 @@
+.s15-images{position:relative;aspect-ratio:16/9;border-radius:1rem;overflow:hidden;border:1px solid var(--ligne)}
+.s15-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s ease}
+.s15-img.actif{opacity:1}
+.s15-etapes{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+.s15-etapes button,.s15-nav button{background:none;border:1px solid var(--ligne);color:var(--sable);border-radius:999px;padding:.55rem 1rem;cursor:pointer;font:inherit;min-height:44px}
+.s15-etapes button[aria-pressed="true"]{background:var(--lapis,#1e3a8a);color:var(--blanc);border-color:var(--or);font-weight:700}
+.s15-lecture{border-left:3px solid var(--or);padding:.4rem 0 .4rem 1rem;margin-top:1rem}
+.s15-refs{color:var(--or)}
+.s15-nav{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:.6rem}
+audio{width:min(38rem,100%)} details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0} summary{cursor:pointer;color:var(--blanc)}
+@media (prefers-reduced-motion: reduce){.s15-img{transition:none}}

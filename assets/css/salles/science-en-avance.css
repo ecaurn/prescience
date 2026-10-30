@@ -1,0 +1,6 @@
+.s12-grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(21rem,100%),1fr));gap:1.2rem}
+.s12-citation{color:var(--sable);font-style:italic;border-left:3px solid var(--or);padding-left:.8rem}
+.s12-ouvre{background:none;border:1px solid var(--or);color:var(--or);border-radius:999px;padding:.6rem 1.1rem;cursor:pointer;font:inherit;min-height:44px}
+.s12-detail{display:none}.s12-panneau.ouvert .s12-detail{display:block}
+figure{margin:0} figure img{width:100%;border-radius:1rem} figcaption{color:var(--sable);font-size:.92rem;margin-top:.5rem}
+audio{width:min(38rem,100%)} details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0} summary{cursor:pointer;color:var(--blanc)}

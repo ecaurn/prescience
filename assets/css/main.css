@@ -1,0 +1,44 @@
+@font-face{font-family:"Cormorant Garamond";src:url("../fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Cormorant Garamond";src:url("../fonts/cormorant-garamond-latin-700-normal.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"EB Garamond";src:url("../fonts/eb-garamond-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Cinzel";src:url("../fonts/cinzel-latin-700-normal.woff2") format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Inter";src:url("../fonts/inter-latin-400-normal.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Inter";src:url("../fonts/inter-latin-700-normal.woff2") format("woff2");font-weight:700;font-display:swap}
+:root{--nuit:#070A12;--lapis:#1E3A8A;--or:#D4AF37;--sable:#E8D9B5;--terre:#A2482B;--turquoise:#3FA7A0;--blanc:#F7F3EA;--ligne:color-mix(in srgb,var(--or) 35%,transparent)}
+@view-transition{navigation:auto}
+*{box-sizing:border-box} html{scrollbar-gutter:stable}
+body{margin:0;background:var(--nuit);color:var(--sable);font-family:Inter,system-ui,sans-serif;line-height:1.65}
+:focus-visible{outline:3px solid var(--turquoise);outline-offset:3px}
+a{color:var(--turquoise)} img{max-width:100%;height:auto;display:block}
+.evitement{position:absolute;left:-9999px}.evitement:focus{left:1rem;top:1rem;background:var(--or);color:#111;padding:.6rem 1rem;z-index:99}
+.entete{position:sticky;top:0;z-index:50;display:flex;gap:1rem;align-items:center;justify-content:space-between;padding:.7rem clamp(1rem,4vw,3rem);background:color-mix(in srgb,var(--nuit) 88%,transparent);border-bottom:1px solid var(--ligne)}
+.marque{display:flex;gap:.8rem;align-items:center;color:var(--blanc);text-decoration:none;font-family:Cinzel,serif;letter-spacing:.12em}
+.marque img{width:52px;height:30px;object-fit:cover;border-radius:4px}
+nav button,nav a.bouton,.bouton{background:none;border:1px solid var(--or);color:var(--or);padding:.55rem 1.1rem;border-radius:999px;cursor:pointer;font:inherit;text-decoration:none;display:inline-block;min-height:44px}
+nav button:hover,.bouton:hover{background:var(--or);color:#141414}
+.tiroir{position:fixed;inset:0 auto 0 0;width:min(22rem,88vw);background:#0B1020;padding:2rem;z-index:80;transform:translateX(-105%);transition:transform .35s ease;border-right:1px solid var(--ligne)}
+.tiroir[aria-hidden="false"]{transform:none}.tiroir a{color:var(--sable);display:block;padding:.35rem 0}
+.hero{position:relative;min-height:92dvh;display:grid;align-items:end;overflow:hidden}
+.hero img.fond{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,var(--nuit) 92%)}
+.hero .contenu{position:relative;z-index:2;padding:clamp(1rem,5vw,4rem);max-width:62rem}
+h1,h2{font-family:"Cormorant Garamond",serif;color:var(--blanc);text-wrap:balance;line-height:1.05}
+h1{font-size:clamp(2.4rem,6vw,4.8rem)} h2{font-size:clamp(1.7rem,3.5vw,2.6rem)}
+.kicker{font-family:Cinzel,serif;letter-spacing:.22em;color:var(--or);text-transform:uppercase;font-size:.8rem}
+.verset{font-family:"EB Garamond",serif;font-size:clamp(1.2rem,2.4vw,1.7rem);color:var(--blanc)}
+section{padding:clamp(2rem,6vw,4.5rem) clamp(1rem,5vw,4rem);max-width:80rem;margin:auto}
+.compteurs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(12rem,100%),1fr));gap:1rem}
+.compteur{border:1px solid var(--ligne);border-radius:1rem;padding:1.2rem;text-align:center}
+.compteur strong{display:block;font-family:"Cormorant Garamond",serif;font-size:2.6rem;color:var(--or)}
+.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(19rem,100%),1fr));gap:1.2rem}
+.carte{border:1px solid var(--ligne);border-radius:1rem;padding:1.3rem;background:#0B1020}
+.carte h3{font-family:"Cormorant Garamond",serif;color:var(--blanc);font-size:1.45rem;margin:.4rem 0}
+.badge{display:inline-block;border-radius:999px;padding:.15rem .7rem;font-size:.78rem;letter-spacing:.08em;border:1px solid var(--or);color:var(--or)}
+.badge.encours{border-color:var(--turquoise);color:var(--turquoise)} .badge.avenir{border-color:#7EA2FF;color:#AFC4FF}
+.encadre{border-left:4px solid var(--or);background:#0E1428;padding:1.2rem 1.4rem;border-radius:0 1rem 1rem 0}
+[data-reveal]{opacity:0;transform:translateY(26px)} [data-reveal].is-visible{opacity:1;transform:none;transition:opacity .8s ease,transform .8s ease}
+html.mouvement-reduit [data-reveal]{opacity:1;transform:none}
+footer{border-top:1px solid var(--ligne);padding:2rem clamp(1rem,5vw,4rem);color:var(--sable)}
+.legende{font-size:.85rem;opacity:.85}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important} [data-reveal]{opacity:1;transform:none}}
+@media (max-width:640px){.entete{flex-wrap:wrap;gap:.5rem}.marque{font-size:.82rem}.marque img{width:40px}nav button{padding:.4rem .7rem;font-size:.9rem}}

@@ -1,0 +1,12 @@
+.s32-compteur{max-width:48rem;border:1px solid var(--or);border-radius:1rem;padding:1.4rem;background:var(--carte)}
+.s32-compteur label{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;color:var(--blanc);font-weight:700}
+.s32-compteur input{width:100%;min-height:44px;accent-color:var(--or);cursor:pointer}
+.s32-graduations{display:flex;justify-content:space-between;gap:.5rem;color:var(--sable);font-size:.82rem;margin:.1rem 0 .7rem}
+.s32-barre{height:.6rem;border:1px solid var(--ligne);border-radius:999px;overflow:hidden;margin:.6rem 0 1rem}
+.s32-barre i{display:block;height:100%;width:4%;background:var(--or);transition:width .5s ease}
+.s32-onglets{display:flex;gap:.6rem;flex-wrap:wrap;margin:1rem 0}
+.s32-onglets button{background:none;border:1px solid var(--ligne);color:var(--blanc);border-radius:999px;padding:.6rem 1.1rem;cursor:pointer;font:inherit;min-height:44px}
+.s32-onglets button.actif{border-color:var(--or);color:var(--or)}
+figure{margin:0} figure img{width:100%;border-radius:1rem} figcaption{color:var(--sable);font-size:.92rem;margin:.5rem 0}
+audio{width:min(38rem,100%)} details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0} summary{cursor:pointer;color:var(--blanc)}
+@media (max-width:560px){.s32-graduations span:nth-child(3){display:none}.s32-compteur label{display:block}.s32-compteur label span{display:block;margin-top:.3rem;color:var(--or)}}

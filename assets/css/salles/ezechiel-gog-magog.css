@@ -1,0 +1,12 @@
+.s31-onglets{display:flex;gap:.6rem;flex-wrap:wrap;margin:1rem 0}
+.s31-onglets button{background:none;border:1px solid var(--ligne);color:var(--blanc);border-radius:999px;padding:.6rem 1.1rem;cursor:pointer;font:inherit;min-height:44px}
+.s31-onglets button.actif{border-color:var(--or);color:var(--or)}
+.s31-scene{max-width:46rem;border:1px solid var(--or);border-radius:1rem;padding:1.4rem;background:var(--carte)}
+.s31-barre{height:.6rem;border:1px solid var(--ligne);border-radius:999px;overflow:hidden;margin:.6rem 0 1rem}
+.s31-barre i{display:block;height:100%;width:20%;background:var(--or);transition:width .5s ease}
+.s31-actions{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1rem}
+.s31-actions button{background:none;border:1px solid var(--ligne);color:var(--blanc);border-radius:999px;padding:.6rem 1.2rem;cursor:pointer;font:inherit;min-height:44px}
+.s31-actions button:hover{border-color:var(--or);color:var(--or)}
+.s31-actions button:disabled{opacity:.4;cursor:default}
+figure{margin:0} figure img{width:100%;border-radius:1rem} figcaption{color:var(--sable);font-size:.92rem;margin:.5rem 0}
+audio{width:min(38rem,100%)} details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0} summary{cursor:pointer;color:var(--blanc)}

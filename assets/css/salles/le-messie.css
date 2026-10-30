@@ -1,0 +1,18 @@
+.s09-filtres{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+.s09-filtres button,.s09-retourne{background:none;border:1px solid var(--ligne);color:var(--sable);border-radius:999px;padding:.55rem 1rem;cursor:pointer;font:inherit;min-height:44px}
+.s09-filtres button[aria-pressed="true"]{background:var(--or);color:#141310;border-color:var(--or);font-weight:700}
+.s09-progres{color:var(--sable)}
+.s09-grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(19rem,100%),1fr));gap:1rem}
+.s09-carte.cache{display:none}
+.s09-ouvre{all:unset;display:block;width:100%;cursor:pointer;min-height:44px}
+.s09-ouvre:focus-visible{outline:2px solid var(--or);outline-offset:3px}
+.s09-titre{display:block;color:var(--blanc);font-size:1.2rem;font-weight:600}
+.s09-refs{display:block;color:var(--or);margin-top:.4rem}
+.s09-controle{display:inline-block;margin:.6rem 0 0;padding:.2rem .6rem;border:1px solid var(--turquoise);color:var(--turquoise);border-radius:999px;font-size:.8rem}
+.s09-detail{display:none;border-top:1px solid var(--ligne);margin-top:.8rem;padding-top:.8rem}
+.s09-carte.ouvert .s09-detail{display:block}
+.s09-carte.ouvert{border-color:var(--or)}
+.s09-preuve .s09-face{display:none}.s09-preuve.ouverte .s09-face{display:block}
+.s09-retourne{border-color:var(--or);color:var(--or)}
+figure{margin:0} figure img{width:100%;border-radius:1rem} figcaption{color:var(--sable);font-size:.92rem;margin-top:.5rem}
+audio{width:min(38rem,100%)} details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0} summary{cursor:pointer;color:var(--blanc)}

@@ -1,0 +1,14 @@
+.s01-test{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(20rem,100%),1fr));gap:1.2rem}
+.s01-liste{list-style:none;padding:0}.s01-liste li{padding:.4rem 0 .4rem 1.6rem;position:relative}
+.s01-liste li::before{content:"";position:absolute;left:0;top:.75rem;width:.7rem;height:.7rem;border-radius:50%;background:var(--or)}
+.s01-comparateur{position:relative;max-width:56rem}
+.s01-comparateur img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:1rem}
+.s01-comparateur .s01-dessus{position:absolute;inset:0;clip-path:inset(0 0 0 50%)}
+.s01-comparateur input{width:100%;min-height:44px}
+.s01-preuve .s01-face{display:none}.s01-preuve.ouverte .s01-face{display:block}
+.s01-retourne{background:none;border:1px solid var(--or);color:var(--or);border-radius:999px;padding:.6rem 1.1rem;cursor:pointer;font:inherit;min-height:44px}
+audio{width:min(38rem,100%);margin:.6rem 0}
+details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0}
+summary{cursor:pointer;color:var(--blanc);min-height:44px}
+
+.s01-onglets{display:flex;gap:.6rem;flex-wrap:wrap;margin:1rem 0}.s01-onglets button{background:none;border:1px solid var(--ligne);color:var(--blanc);border-radius:999px;padding:.6rem 1.1rem;cursor:pointer;font:inherit;min-height:44px}.s01-onglets button.actif{border-color:var(--or);background:rgba(212,175,55,.14);color:var(--or)}

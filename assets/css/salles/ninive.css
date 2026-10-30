@@ -1,0 +1,11 @@
+.s04-details{list-style:none;counter-reset:d;padding:0}
+.s04-details li{counter-increment:d;padding:1rem 1rem 1rem 4rem;position:relative;border-bottom:1px solid var(--ligne)}
+.s04-details li::before{content:counter(d);position:absolute;left:0;top:.6rem;width:2.6rem;height:2.6rem;border-radius:50%;border:2px solid var(--or);color:var(--or);display:grid;place-items:center;font-family:Cinzel,serif}
+.s04-comparateur{position:relative;max-width:56rem}
+.s04-comparateur img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:1rem}
+.s04-comparateur .s04-dessus{position:absolute;inset:0;clip-path:inset(0 0 0 50%)}
+.s04-comparateur input{width:100%;min-height:44px}
+.s04-frise{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(16rem,100%),1fr));gap:1.2rem}
+.s04-preuve .s04-face{display:none}.s04-preuve.ouverte .s04-face{display:block}
+.s04-retourne{background:none;border:1px solid var(--or);color:var(--or);border-radius:999px;padding:.6rem 1.1rem;cursor:pointer;font:inherit;min-height:44px}
+audio{width:min(38rem,100%)} details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0} summary{cursor:pointer;color:var(--blanc)}

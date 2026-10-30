@@ -1,0 +1,14 @@
+.s02-fil{display:grid;grid-template-columns:1fr auto 1fr;gap:1.2rem;align-items:center}
+@media(max-width:700px){.s02-fil{grid-template-columns:1fr}}
+.s02-compteur{text-align:center;border:1px solid var(--ligne);border-radius:50%;width:11rem;height:11rem;display:grid;place-content:center}
+.s02-compteur strong{font-family:"Cormorant Garamond",serif;font-size:3rem;color:var(--or);display:block}
+.s02-details{list-style:none;counter-reset:d;padding:0}
+.s02-details li{counter-increment:d;padding:1rem 1rem 1rem 4rem;position:relative;border-bottom:1px solid var(--ligne)}
+.s02-details li::before{content:counter(d);position:absolute;left:0;top:.6rem;width:2.6rem;height:2.6rem;border-radius:50%;border:2px solid var(--or);color:var(--or);display:grid;place-items:center;font-family:Cinzel,serif}
+.s02-carte canvas{width:100%;height:auto;background:#0B1020;border:1px solid var(--ligne);border-radius:1rem}
+.s02-commandes{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;margin:1rem 0}
+.s02-commandes button{background:none;border:1px solid var(--or);color:var(--or);border-radius:999px;padding:.6rem 1.1rem;cursor:pointer;font:inherit;min-height:44px}
+.s02-commandes input{flex:1;min-width:12rem;min-height:44px}
+.s02-preuve .s02-face{display:none}.s02-preuve.ouverte .s02-face{display:block}
+.s02-retourne{background:none;border:1px solid var(--or);color:var(--or);border-radius:999px;padding:.6rem 1.1rem;cursor:pointer;font:inherit;min-height:44px}
+audio{width:min(38rem,100%)} details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0} summary{cursor:pointer;color:var(--blanc)}

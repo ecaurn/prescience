@@ -1,0 +1,16 @@
+.s17-rivales details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0}
+.s17-rivales summary{cursor:pointer;color:var(--blanc)}
+.s17-quiz{max-width:46rem;border:1px solid var(--or);border-radius:1rem;padding:1.4rem;background:var(--carte)}
+.s17-barre{height:.6rem;border:1px solid var(--ligne);border-radius:999px;overflow:hidden;margin:.6rem 0 1rem}
+.s17-barre i{display:block;height:100%;width:0;background:var(--or);transition:width .4s ease}
+.s17-options{display:grid;gap:.6rem}
+.s17-options button{background:none;border:1px solid var(--ligne);color:var(--blanc);border-radius:.8rem;padding:.8rem 1rem;cursor:pointer;font:inherit;text-align:left;min-height:44px}
+.s17-options button.bonne{border-color:var(--turquoise);background:rgba(63,167,160,.15)}
+.s17-options button.mauvaise{border-color:#a2482b;background:rgba(162,72,43,.15)}
+.s17-options button:disabled{cursor:default;opacity:.92}
+.s17-retour{min-height:1.4em;color:var(--sable)}
+.s17-actions{display:flex;gap:.8rem;flex-wrap:wrap}
+.s17-actions button{background:var(--or);color:#141310;border:none;border-radius:999px;padding:.6rem 1.2rem;cursor:pointer;font:inherit;font-weight:700;min-height:44px}
+.s17-final{font-size:1.15rem;color:var(--blanc)}
+figure{margin:0} figure img{width:100%;border-radius:1rem} figcaption{color:var(--sable);font-size:.92rem;margin-top:.5rem}
+audio{width:min(38rem,100%)} details{border:1px solid var(--ligne);border-radius:1rem;padding:1rem 1.2rem;margin:1rem 0} summary{cursor:pointer;color:var(--blanc)}

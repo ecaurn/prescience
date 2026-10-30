@@ -1,0 +1,18 @@
+(function(){
+  var RECIT={
+   promesse:{t:"« Je donnerai ma vie pour toi »",x:"Au cours du dernier repas, Pierre proteste : « je donnerai ma vie pour toi. » Jésus répond par l'annonce qui structure toute la salle : « en vérité, en vérité, je te le dis, le coq ne chantera pas, que tu ne m'aies renié trois fois » — et Luc précise que la chute avait été précédée d'une prière : que la foi de Pierre ne défaille pas, et qu'une fois revenu, il affermisse ses frères. L'avertissement contient donc déjà le scénario complet, y compris la restauration.",b:"<span class=\"badge avenir\">LECTURE PROPHÉTIQUE</span> Jean 13:37-38 ; Luc 22:31-34 ; Matthieu 26:33-35."},
+   cour:{t:"« Tu étais aussi avec Jésus le Galiléen »",x:"Pierre suit de loin jusqu'à la cour du souverain sacrificateur et s'assied près d'un feu de charbon (anthrakiá, translittération du grec) parmi les serviteurs — « pour voir la fin ». Une servante le reconnaît, puis une autre personne, puis un troisième insiste : son langage le trahit, c'est un Galiléen. Trois fois, de plus en plus fort, avec serments et imprécations dans la version de Matthieu : « je ne connais pas cet homme. »",b:"<span class=\"badge avenir\">LECTURE PROPHÉTIQUE</span> Matthieu 26:69-74 ; Jean 18:15-18, 25-27 (résumé sobre)."},
+   coq:{t:"Le regard à travers la cour",x:"Au troisième reniement, le coq chante. Luc ajoute le détail que le musée retient comme centre moral de la scène : « le Seigneur, s'étant retourné, regarda Pierre » — un regard, aucun discours. Pierre se souvient de la parole, sort, et « pleura amèrement ». La chute annoncée heure par heure s'achève en larmes, non en endurcissement : la différence avec Judas, qui sortira lui aussi dans la nuit, tient à cette direction — vers le dehors pour pleurer, non vers le désespoir.",b:"<span class=\"badge avenir\">LECTURE PROPHÉTIQUE</span> Luc 22:60-62 ; Matthieu 26:75."},
+   lac:{t:"« C'est le Seigneur ! » — Pierre se jette à l'eau",x:"Après la résurrection, sept disciples ont pêché toute la nuit sans rien prendre au lac de Tibériade. À l'aube, un homme sur le rivage leur fait jeter le filet à droite de la barque : il se remplit de cent cinquante-trois grands poissons sans se rompre. Jean reconnaît : « c'est le Seigneur ! » Pierre, qui avait ôté son vêtement pour travailler, le remet et se jette à l'eau pour arriver le premier. Sur la braise, du poisson grille et du pain attend — le même mot de feu de charbon que dans la cour, retourné en hospitalité.",b:"<span class=\"badge avenir\">LECTURE PROPHÉTIQUE</span> Jean 21:1-14 (résumé sobre)."},
+   brebis:{t:"Trois « m'aimes-tu » pour trois reniements",x:"Après le repas, Jésus prend Pierre à part : trois fois « Simon, fils de Jonas, m'aimes-tu ? », trois fois une charge — « pais mes agneaux », « pais mes brebis ». Attristé que la question revienne une troisième fois, Pierre s'en remet à celui qui sait : « tu sais que je t'aime. » Jésus annonce alors, en termes voilés, la mort par laquelle Pierre glorifiera Dieu, et conclut par le mot du début, répété comme un relèvement : « suis-moi. » L'homme de la cour devient le berger de la salle 45.",b:"<span class=\"badge avenir\">LECTURE PROPHÉTIQUE</span> Jean 21:15-19."}
+  };
+  var cle="promesse";
+  var ti=document.getElementById("s55-titre"), tx=document.getElementById("s55-texte"), bd=document.getElementById("s55-badge");
+  var boutons=document.querySelectorAll(".s55-temps button");
+  function montrer(){
+    var p=RECIT[cle]; ti.textContent=p.t; tx.textContent=p.x; bd.innerHTML=p.b;
+    boutons.forEach(function(b){ b.classList.toggle("actif", b.getAttribute("data-temps")===cle); });
+  }
+  boutons.forEach(function(b){ b.addEventListener("click",function(){ cle=b.getAttribute("data-temps"); montrer(); }); });
+  montrer();
+})();
